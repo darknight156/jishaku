@@ -155,7 +155,7 @@ class RootCommand(Feature):
 
         # Show websocket latency in milliseconds
         summary.append(f"Average websocket latency: {round(self.bot.latency * 1000, 2)}ms")
-        cypher = discord.Embed(description=f"\n".join(summary),color=0xFFFFFF)
+        cypher = discord.Embed(description=f"\n".join(summary),color=0x39FF14)
         cypher.set_author(name=f"{self.bot.user.name}'s Jishaku",icon_url=self.bot.user.display_avatar.url)
         cypher.set_footer(text=f"Made With \u2764\uFE0F By {self.bot.user.name}'s Team!",icon_url=self.bot.user.display_avatar.url)
 
